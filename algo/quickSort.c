@@ -53,8 +53,8 @@ void quickSort(int A[], int beg, int end)
     if(beg < end)
     {
         loc = partition(A, beg, end);
-        mergeSort(A, beg, loc - 1);
-        mergeSort(A, loc + 1, end);
+        quickSort(A, beg, loc - 1);
+        quickSort(A, loc + 1, end);
     }
 }
 
