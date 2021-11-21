@@ -4,6 +4,7 @@ Write a C program to find the sum of contiguous subarray in an array which has t
 
 #include <stdio.h>
 
+// function to find maximum sub-array sum
 int maxSubArraySum(int arr[], int n)
 {
     int i = 0;

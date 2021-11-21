@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-void smallest(int A[], int n)
-{
-
-}
-
 void selectionSort(int A[], int n)
 {
     int i, j;
