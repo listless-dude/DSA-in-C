@@ -45,6 +45,21 @@ int main(void)
     return 0;
 }
 
+void reverse()
+{
+    struct node *ptr = head;
+    struct node *prev = NULL, *next = NULL;
+
+    while (ptr != NULL)
+    {
+        next = ptr->next;
+        ptr->next = prev;
+        prev = ptr;
+        ptr = next;
+    }
+    head = prev;
+}
+
 void createNode(int n)
 {
     struct node *newnode, *tmp;
